@@ -1,0 +1,414 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+  /* padding: 0px 50px ; */
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  background-color: #F2F6F7;
+}
+
+p{
+  line-height: 200%;
+}
+
+a:hover{
+  border-bottom: orange 4px solid;
+}
+
+span{
+  color:orange;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+  background-image: url("https://i.ibb.co/dK8QTK5/top.png");
+  background-size: cover;
+  height: 600px;
+  padding: 10px 50px;
+}
+
+h1,h2,h3,h4,h5{
+  color: #01041C;
+} 
+
+h1{
+  font-size: 4.5rem;
+  padding-right: 500px;
+  margin-bottom: 20px;
+  font-family: 'DM Serif Text', serif;
+}
+
+h2{
+  font-size: 3rem;
+  font-family: 'DM Serif Text', serif;
+  padding-right: 300px;
+  margin-top:10px;
+}
+
+h3{
+  font-size: 1.5rem;
+  font-family: 'DM Serif Text', serif;
+}
+
+h4{
+  font-size: 1.5rem;
+  color: orange;
+}
+
+
+
+nav{
+ padding-left: 500px;
+}
+
+header>nav li{
+  display: inline;
+  margin-left:30px;
+}
+ 
+.headerText{
+  margin-top: 100px;
+}
+
+.headerText li{
+  display: inline;
+  margin-top: 20px;
+  margin-right: 40px;
+}
+
+.headerText ul{
+  padding: 0px;
+  margin-top: 40px;
+}
+
+header input{
+  padding: 10px;
+  width: 450px;
+  border-radius: 5px;
+  border: grey 0.5px solid;
+}
+
+header button{
+  padding: 10px 40px;
+  color: white;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  margin-left: 0px;
+}
+
+.fab{
+  color: orange;
+}
+
+a{
+  text-decoration: none;
+  color: #121212;
+}
+
+#aboutUs{
+  background-image: url("https://i.ibb.co/Tk72Kzd/about.jpg");
+  background-size: cover;
+  height: 700px;
+  padding: 50px 150px 0px 500px;
+}
+
+#aboutUs p{
+  padding-right: 200px;
+  margin-bottom: 40px;
+}
+
+#aboutUs a{
+  background: orange;
+  color: white;
+  padding: 20px 50px;
+  border-radius: 5px;
+  
+}
+
+#orderSection{
+  background: rgba(232, 236, 241, 1);
+  height: 600px;
+  padding-top: 50px;
+  text-align: center;
+}
+
+#orderSection li{
+  display: inline;
+  margin-right: 40px;
+}
+
+#orderSection h2{
+  padding:inherit;
+}
+
+
+#bookingSection{
+  background: rgba(243, 241, 239, 1);
+  height: 1000px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+#bookingSection h2{
+  padding: 0px;
+}
+
+#bookingSection h4, p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.fa-phone-alt{
+  color: orange;
+  border: orange 1px solid;
+  padding: 20px;
+  border-radius: 200px;
+}
+
+.timeSection{
+  float: left;
+  width:50%;
+  /* text-align: left; */
+}
+
+#timeImage{
+  width: 100%;
+  padding-left: 20px;
+  padding: 50px 300px;
+  
+}
+
+#testimonial{
+  text-align: center;
+  padding-top: 50px;
+
+}
+
+#testimonial h2{
+  padding: 0px;
+}
+
+/* #testimonial p{
+  padding:10px 400px;
+} */
+#testimonial #title{
+  margin-top: -20px;
+  color: gray;
+}
+
+#testimonial #name{
+  font-size: 2rem;
+  margin-bottom: 0px;
+  
+}
+
+#testimonial img{
+  border-radius: 100px;
+  width:100px;
+}
+
+#testimonial li{
+  display: inline;
+  
+}
+
+.fa-star{
+  color:gold;
+}
+
+#testimonial ul{
+  padding: 0px;
+}
+
+#testimonial #comment{
+  padding: 10px 300px;
+}
+
+#testimonial .fas{
+  color:	rgba(255,165,0,0.5);
+}
+
+#testimonial .fa-lg{
+  color:	rgba(255,165,0,1);
+}
+
+footer{
+  margin-top: 50px;
+  padding: 0px 100px;
+  background-color:  #F2F6F7;
+}
+
+
+
+footer section{
+  float: left;
+  width:25%;
+  /* background: #F2F6F7; */
+}
+
+footer #last{
+  width: 100%;
+  margin-top: 40px;
+  padding: 10px 0px;
+  border-top: 1px solid rgba(108, 122, 137, 1) ;
+}
+
+.company{
+  padding: 0px 20px;
+}
+
+.company p{
+  font-size: 0.8rem;
+}
+
+.links ul{
+  padding: 0px;
+}
+
+.links li{
+  list-style: none;
+  margin: 12px 0px;
+}
+
+.subscription{
+  /* position: relative; */
+}
+
+.subscription input{
+  padding: 10px 10px;
+  border: grey 0.5px solid;
+  border-radius: 5px;
+}
+
+.subscription span{
+  position: relative;
+  right: 40px;
+
+}
+
+footer #last p{
+  display: inline;
+  font-size: 0.7rem;
+}
+
+footer #last li{
+  display: inline;
+  margin-right: 10px;
+}
+
+footer #last ul{
+  padding: 0px;
+  margin: 10px 0px;
+  float: right;
+}
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+@media screen and (max-width:600px){
+  html{
+    font-size: 8px;
+  }
+
+  nav{
+    display: none;
+  }
+  header{
+    padding:10px 10px;
+  }
+
+  .headerText{
+   width: 100%; 
+  }
+  .headerText input{
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  header button{
+    width:100%;
+  }
+  h1{
+    padding-right:100px;
+  }
+  h2{
+    padding-right:100px ;
+  }
+
+  #aboutUs{
+    padding:50px 10px;
+    text-align: center;
+  }
+  #aboutUs h2{
+    padding:0px 50px;
+  }
+  #aboutUs p{
+    padding-right:0px;
+    background: rgba(255, 255, 255, 0.5);
+    /* padding-left: 10px; */
+  }
+ #bookingSection{
+  height:650px;
+ }
+
+  #orderSection li{
+    margin-right: 10px;
+  }
+  #orderSection>ul a{
+    padding-bottom: 10px;
+  }
+  .timeSection{
+    width: 100%;
+  }
+
+  #timeImage{
+   padding:0px;
+  }
+  #timeImage img{
+    padding:0px;
+    width: 100%;
+   }
+
+   #testimonial #comment{
+    padding:10px 0px;
+    padding-right: 50px;
+   }
+
+   footer{
+     padding: 0px 20px;
+   }
+   footer section{
+     width: 100%;
+   }
+
+   .company{
+     padding: 0px 50px 0px 0px;
+   }
+   .company p{
+     font-size: 1rem;
+   }
+
+}
